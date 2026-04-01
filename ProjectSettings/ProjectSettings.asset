@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 24
-  productGUID: 641e05419461655479ffa234adf86793
+  productGUID: 8ec4470e0c3ee754588ca06c1111f309
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: My project
+  productName: My project (1)
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -719,10 +719,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 81bfad55-d24e-41c7-b24a-451a501553af
+  cloudProjectId: a1d066dd-87c6-4fec-a99e-8e9a702c5297
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: My project 2026-04-01_11-58-42
+  projectName: My project (1) 2026-04-01_12-19-54
   organizationId: usernamememe
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
