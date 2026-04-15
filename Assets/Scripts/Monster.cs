@@ -30,10 +30,28 @@ public class Monster : MonoBehaviour
     // Update is called once per frame
     private void OnCollisionEnter(Collision collision)
     {
-        GameObject explosionObi = Instantiate(prefabsExplosion);
-        explosionObi.transform.position = transform.position;
+        if(collision.gameObject.tag == "Bullet")
+        {
+            Debug.Log("bullet-----------------");
+            GameObject gameManager = GameObject.Find("GameManager");
+            ScoreManager scoreManager = gameManager.GetComponent<ScoreManager>();
+            scoreManager.nowScore++;
+            scoreManager.nowScoreUI.text = "Now Score : " + scoreManager.nowScore;
+            if(scoreManager.nowScore > scoreManager.bestScore)
+            {
+                scoreManager.bestScore = scoreManager.nowScore;
+                scoreManager.bestScoreUI.text = "Best Score : " + scoreManager.bestScore;
+                PlayerPrefs.SetInt("BestScore", scoreManager.bestScore);
+            }
 
-        Destroy(collision.gameObject);
-        Destroy(gameObject);
-    }
+            GameObject explosionObj = Instantiate(prefabsExplosion);
+            explosionObj.transform.position = transform.position;
+
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        } else
+        {
+            Debug.Log("bullet-----------------");
+        }
+    } 
 }

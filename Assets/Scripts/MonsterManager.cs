@@ -23,6 +23,7 @@ public class MonsterManager : MonoBehaviour
 
         if (nowTime > createTime)
         {
+            Debug.Log("monster-----------------");
             GameObject monster = Instantiate(prefabsMonster);
             monster.transform.position = transform.position;
 
